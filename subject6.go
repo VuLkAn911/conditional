@@ -32,7 +32,6 @@ func main() {
 	var isLoggedIn bool
 	var isAdmin bool
 
-	hasAccess := true
-	isAdmin = hasAccess && isLoggedIn || isAdmin
+	hasAccess := isAdmin && isLoggedIn
 	fmt.Printf("Has access: %t\n", hasAccess)
 }
